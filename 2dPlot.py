@@ -9,7 +9,14 @@ noise=np.random.normal(0.0,2,len(x))
 ###plt.show()
 
 #drawing 2 lines on a graph
-plt.plot(x,y+noise,'g-')
-plt.plot(x,y,'b.')
+plt.plot(x,y+noise,'g.',label='Actual data')
+plt.plot(x,y,'b-',label='Fitted model')
 plt.ylabel('some numbers')
+
+plt.title("Average speed vs. Distance covered over time")
+plt.xlabel("Average speed (km/h))")
+plt.ylabel("Distance covered over time (km)")
+plt.legend()
+
 plt.show()
+
